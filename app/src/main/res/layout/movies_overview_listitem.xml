@@ -1,0 +1,128 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:paddingTop="100dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_height="220dp"
+        android:layout_weight="0.99"
+        android:layout_width="match_parent"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_height="match_parent"
+            android:layout_weight="1.13"
+            android:layout_width="wrap_content" />
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="215dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/titleRate"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/movieTitle"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:text="Movie Title"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/movieAverageRate"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:text="Movie average rate"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_1488239266_star" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/genreDate"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:weightSum="1"
+                android:layout_weight="1"
+                android:layout_below="@+id/titleRate"
+                android:layout_alignParentStart="true">
+
+
+
+                <TextView
+                    android:id="@+id/genreList"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:text="GenreList"
+                    android:textSize="10sp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/relaseDate"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:text="RelaseYear"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_1488241482_calendar_3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/overview"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:text="Overview"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:layout_below="@+id/genreDate"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:clickable="true"
+                android:id="@+id/moreInfo"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_below="@+id/overview"
+                android:text="More info" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,25 @@
+package com.greenfox.androidtest.response;
+
+import com.greenfox.androidtest.models.Genre;
+
+import java.util.ArrayList;
+
+public class GenreResponse {
+
+    ArrayList<Genre> genres;
+
+    public GenreResponse() {
+    }
+
+    public GenreResponse(ArrayList<Genre> genres) {
+        this.genres = genres;
+    }
+
+    public ArrayList<Genre> getGenres() {
+        return genres;
+    }
+
+    public void setGenres(ArrayList<Genre> genres) {
+        this.genres = genres;
+    }
+}
